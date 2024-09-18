@@ -22,7 +22,9 @@ jobs:
           distribution: 'temurin'
       - name: Make mvnw executable
         run: chmod +x ./mvnw
+      - name: Build with Maven
+        run: ./mvnw clean install
       - name: GLogger package
         run: ./mvnw deploy
         env:
-          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_TOKEN: ${{ secrets.PATH_TOKEN }}
