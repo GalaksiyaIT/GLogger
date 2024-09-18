@@ -27,4 +27,4 @@ jobs:
       - name: GLogger package
         run: ./mvnw deploy
         env:
-          GITHUB_TOKEN: ${{ secrets.PATH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
