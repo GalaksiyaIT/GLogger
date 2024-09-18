@@ -19,7 +19,7 @@ jobs:
         uses: actions/setup-java@v4
         with:
           java-version: '1.8'
-          distribution: 'openjdk'
+          distribution: 'jdk'
 
       - name: GLogger package
         run: ./mvnw deploy
