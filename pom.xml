@@ -28,6 +28,11 @@
                     <target>1.8</target>
                 </configuration>
             </plugin>
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-deploy-plugin</artifactId>-->
+<!--                <version>3.0.0-M1</version>-->
+<!--            </plugin>-->
             <plugin>
                 <artifactId>maven-jar-plugin</artifactId>
                 <executions>
@@ -51,14 +56,17 @@
     <distributionManagement>
         <repository>
             <id>github</id>
-            <name>Github</name>
+            <name>GitHub Packages</name>
             <url>https://maven.pkg.github.com/GalaksiyaIT/GLogger</url>
         </repository>
-        <snapshotRepository>
+    </distributionManagement>
+
+    <repositories>
+        <repository>
             <id>github</id>
             <url>https://maven.pkg.github.com/GalaksiyaIT/GLogger</url>
-        </snapshotRepository>
-    </distributionManagement>
+        </repository>
+    </repositories>
 
     <dependencies>
         <dependency>
