@@ -20,7 +20,8 @@ jobs:
         with:
           java-version: '8'
           distribution: 'temurin'
-
+      - name: Make mvnw executable
+        run: chmod +x ./mvnw
       - name: GLogger package
         run: ./mvnw deploy
         env:
